@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config({ path: path.resolve(__dirname, "../.env") });
 import cors from "cors";
-import express from "express";
+import express, { type Request, type Response } from "express";
 import { createServer } from "http";
 import { Server } from "socket.io";
 import type { Category, HostSettings } from "./types.js";
@@ -23,7 +23,7 @@ const app = express();
 app.use(cors({ origin: corsOrigin, credentials: true }));
 app.use(express.json());
 
-app.get("/health", (_req, res) => res.json({ ok: true }));
+app.get("/health", (_req: Request, res: Response) => res.json({ ok: true }));
 
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
