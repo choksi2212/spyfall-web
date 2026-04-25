@@ -1,0 +1,61 @@
+{
+    "objects": [
+      "pen","pencil","eraser","sharpener","book","notebook","paper","file","folder","diary",
+      "bag","school bag","handbag","wallet","purse","box","plastic box","storage box","container","basket",
+      "table","chair","sofa","bed","pillow","blanket","mattress","cupboard","shelf","drawer",
+      "door","window","curtain","mirror","clock","wall clock","watch","calendar","frame","photo frame",
+  
+      "fan","light","bulb","tube light","switch","plug","socket","wire","cable","extension board",
+      "mobile","phone","laptop","computer","keyboard","mouse","screen","charger","earphones","headphones",
+  
+      "bottle","water bottle","glass","cup","plate","bowl","spoon","fork","knife","tray",
+      "tiffin","lunch box","jar","container box","pressure cooker","pan","kadai","tawa","gas stove","oven",
+  
+      "fridge","refrigerator","mixer","grinder","toaster","electric kettle","rice cooker","water purifier","filter","jug",
+  
+      "soap","shampoo","toothbrush","toothpaste","towel","comb","brush","bucket","mug","dustbin",
+      "broom","mop","cleaning cloth","detergent","washing powder","iron","iron box","hanger","clip","cloth stand",
+  
+      "shoe","slipper","sandals","socks","belt","cap","hat","scarf","jacket","shirt",
+      "tshirt","pant","jeans","shorts","skirt","dress","uniform","gloves","helmet","mask",
+  
+      "remote","tv","television","speaker","radio","camera","tripod","flashlight","torch","battery",
+      "calculator","pen drive","hard disk","memory card","router","wifi device","printer","scanner","projector","screen board",
+  
+      "toy","ball","bat","doll","car toy","blocks","puzzle","board game","cards","dice",
+      "kite","rope","skipping rope","cycle","bicycle","helmet","sports bag","water can","whistle","scoreboard",
+  
+      "key","lock","keychain","bell","alarm","door handle","door lock","latch","bolt","chain",
+      "umbrella","raincoat","bag cover","travel bag","suitcase","trolley bag","passport cover","ticket","id card","badge",
+  
+      "brick","stone","cement bag","tile","wood plank","ladder","hammer","nail","screw","tool box",
+      "drill machine","saw","spanner","wrench","pipe","tap","bucket stand","water tank","rope","hook",
+  
+      "plate stand","cup stand","spice box","salt box","sugar box","oil bottle","milk packet","bread box","fruit basket","vegetable basket",
+      "knife set","chopping board","rolling pin","rolling board","gas lighter","match box","kitchen towel","napkin","paper napkin","dust cloth",
+  
+      "bed sheet","pillow cover","curtain rod","table cover","chair cover","floor mat","door mat","carpet","rug","blanket cover",
+      "lamp","study lamp","night lamp","ceiling fan","table fan","stand fan","air cooler","air conditioner","heater","geyser",
+  
+      "soap case","toothbrush holder","towel stand","bucket lid","mug handle","water tap","shower","mirror frame","bath mat","laundry basket",
+      "washing machine","dryer","iron stand","cloth hanger","cloth clip","cloth basket","wardrobe","almirah","locker","storage unit",
+  
+      "helmet visor","bike key","car key","fuel can","tool kit","jack","stepney","car cover","bike cover","seat cover",
+      "steering wheel","gear lever","brake pedal","accelerator","mirror glass","indicator","horn button","dashboard","speedometer","number plate",
+  
+      "chalk","duster","blackboard","whiteboard","marker","board pen","attendance register","report card","exam paper","answer sheet",
+      "school desk","school bench","school chair","school table","school bag","geometry box","scale","compass","divider","protractor",
+  
+      "id card holder","lanyard","office file","office desk","office chair","office table","office computer","office phone","office printer","office scanner",
+      "stapler","stapler pin","paper clip","pin holder","tape","glue","rubber band","notepad","sticky note","white paper",
+  
+      "flower pot","plant pot","watering can","garden hose","garden tool","spade","shovel","rake","fertilizer bag","seed packet",
+      "leaf basket","garden chair","garden table","garden light","garden fence","garden gate","garden bench","garden path","garden stone","garden pipe",
+  
+      "toy car","toy train","toy plane","toy gun","toy ball","soft toy","teddy bear","action figure","building blocks","toy robot",
+      "game controller","video game","console","joystick","remote car","remote plane","toy kitchen set","toy doctor set","toy tools","toy box",
+  
+      "cup holder","plate holder","spoon holder","knife holder","glass holder","bottle holder","stand","rack","storage rack","shoe rack",
+      "book shelf","display shelf","tv stand","table stand","mobile stand","laptop stand","charger stand","pen stand","brush stand","cup stand"
+    ]
+  }

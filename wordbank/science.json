@@ -1,0 +1,66 @@
+{
+    "science": [
+      "science","experiment","lab","test","result","theory","fact","proof","idea","concept",
+      "research","study","observe","measure","record","analyze","compare","predict","explain","learn",
+  
+      "atom","molecule","cell","tissue","organ","body","system","structure","function","process",
+      "energy","force","motion","speed","distance","time","mass","weight","gravity","pressure",
+      "heat","temperature","light","sound","electricity","magnet","power","work","friction","wave",
+  
+      "solid","liquid","gas","water","air","oxygen","carbon dioxide","nitrogen","hydrogen","steam",
+      "ice","boil","freeze","melt","evaporate","condense","mix","separate","filter","dissolve",
+  
+      "plant","tree","leaf","root","stem","flower","fruit","seed","soil","water",
+      "sunlight","photosynthesis","grow","plant life","green plant","crop","grass","forest","garden","farm",
+  
+      "animal","human","body","head","hand","leg","heart","brain","blood","bone",
+      "muscle","skin","eye","ear","nose","mouth","teeth","digest","breathe","move",
+  
+      "earth","sun","moon","star","planet","solar system","space","sky","cloud","rain",
+      "wind","storm","weather","climate","season","summer","winter","monsoon","day","night",
+  
+      "river","lake","ocean","sea","mountain","hill","valley","desert","forest","island",
+      "environment","nature","ecosystem","habitat","pollution","air pollution","water pollution","soil pollution","clean","dirty",
+  
+      "electric current","electric charge","battery","bulb","switch","wire","circuit","plug","socket","power source",
+      "light source","sound wave","heat energy","solar energy","wind energy","water energy","renewable energy","non renewable","fuel","coal",
+  
+      "acid","base","salt","solution","mixture","reaction","chemical","substance","material","metal",
+      "non metal","alloy","rust","corrosion","burn","fire","flame","smoke","gas release","reaction speed",
+  
+      "push","pull","lift","drop","roll","slide","fall","rise","spin","rotate",
+      "vibrate","move fast","move slow","stop motion","change direction","balance","unbalance","center","edge","surface",
+  
+      "body system","digestive system","respiratory system","circulatory system","nervous system","excretory system","skeletal system","muscular system","brain control","body movement",
+      "food","nutrition","vitamin","protein","carbohydrate","fat","mineral","healthy food","junk food","diet",
+  
+      "germ","bacteria","virus","infection","disease","health","medicine","treatment","doctor","hospital",
+      "clean water","safe food","hygiene","wash hands","clean body","prevent disease","immune system","fever","cold","cough",
+  
+      "sunlight energy","heat transfer","light reflection","light refraction","sound travel","echo","shadow","mirror","lens","image",
+      "magnify","focus","reflection","absorb","transmit","block light","bright","dark","color","rainbow",
+  
+      "machine","simple machine","lever","pulley","wheel","axle","inclined plane","tool","device","work machine",
+      "effort","load","energy transfer","force applied","machine work","efficiency","mechanical work","input","output","result",
+  
+      "water cycle","evaporation","condensation","precipitation","rainfall","cloud formation","water flow","river flow","ground water","water storage",
+      "water use","water saving","water supply","water source","drinking water","clean water","dirty water","water filter","boil water","safe water",
+  
+      "plant growth","seed germination","plant food","plant water","plant sunlight","plant care","plant root","plant stem","plant leaf","plant flower",
+      "animal life","animal growth","animal food","animal shelter","animal care","animal movement","animal sound","animal habitat","animal group","animal survival",
+  
+      "earth rotation","earth revolution","day cycle","night cycle","season change","sun rise","sun set","moon phase","full moon","new moon",
+      "star light","space travel","rocket","satellite","astronaut","space mission","orbit","gravity pull","weightlessness","space station",
+  
+      "environment protection","save trees","plant trees","reduce pollution","reuse","recycle","clean air","clean water","save energy","save water",
+      "green energy","solar panel","windmill","water dam","energy saving","electric saving","fuel saving","eco friendly","nature care","earth care",
+  
+      "measurement","scale","ruler","meter","centimeter","kilometer","gram","kilogram","liter","milliliter",
+      "clock","time measure","temperature measure","thermometer","weight measure","balance","speed measure","distance measure","unit","value",
+  
+      "observation","data","record data","analyze data","result check","compare result","predict result","test again","experiment setup","lab tool",
+      "glass","beaker","test tube","flask","dropper","funnel","stand","holder","lab table","lab safety",
+  
+      "safety rule","wear gloves","wear mask","wear goggles","handle carefully","do not touch","keep clean","follow steps","avoid danger","stay safe"
+    ]
+  }

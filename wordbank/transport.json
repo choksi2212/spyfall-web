@@ -1,0 +1,69 @@
+{
+    "transport": [
+      "car","bus","train","bike","bicycle","scooter","auto","rickshaw","truck","van",
+      "taxi","metro","tram","aeroplane","plane","helicopter","boat","ship","ferry","canoe",
+      "kayak","submarine","ambulance","fire truck","police car","school bus","delivery van","pickup truck","jeep","tractor",
+  
+      "road","street","lane","highway","bridge","flyover","tunnel","signal","traffic light","zebra crossing",
+      "footpath","sidewalk","divider","roundabout","junction","crossroad","bus stop","bus stand","railway station","platform",
+  
+      "airport","runway","terminal","metro station","ticket counter","waiting area","parking","garage","petrol pump","charging station",
+  
+      "driver","passenger","conductor","pilot","captain","rider","traveller","commuter","ticket","pass",
+      "seat","window seat","middle seat","aisle seat","handle","rail","step","ladder","entry","exit",
+  
+      "engine","wheel","tyre","brake","clutch","gear","steering","mirror","indicator","horn",
+      "headlight","taillight","dashboard","speedometer","fuel tank","battery","motor","chain","pedal","handlebar",
+  
+      "ride","drive","travel","journey","trip","tour","commute","move","start","stop",
+      "accelerate","brake","turn","reverse","park","overtake","follow","cross","enter","exit",
+  
+      "ticket check","ticket booking","online booking","offline booking","reservation","cancel ticket","confirm ticket","waiting list","seat number","coach number",
+  
+      "fast train","slow train","local train","express train","bullet train","passenger train","goods train","metro train","electric train","diesel train",
+  
+      "city bus","local bus","school bus","private bus","government bus","mini bus","double decker bus","night bus","day bus","tour bus",
+  
+      "small car","big car","family car","electric car","petrol car","diesel car","luxury car","sports car","old car","new car",
+  
+      "two wheeler","three wheeler","four wheeler","heavy vehicle","light vehicle","public transport","private transport","road transport","air transport","water transport",
+  
+      "cycle ride","bike ride","car ride","bus ride","train ride","metro ride","boat ride","ship ride","flight ride","long drive",
+  
+      "short trip","long trip","daily travel","office travel","school travel","holiday travel","business trip","family trip","solo trip","group travel",
+  
+      "traffic jam","heavy traffic","light traffic","no traffic","rush hour","peak hour","road block","accident","road work","diversion",
+  
+      "bus ticket","train ticket","metro card","travel card","boarding pass","luggage","bag","handbag","backpack","suitcase",
+  
+      "platform ticket","entry gate","exit gate","security check","ticket gate","check in","check out","boarding","landing","take off",
+  
+      "parking lot","parking space","no parking","paid parking","free parking","parallel parking","angle parking","garage parking","road parking","basement parking",
+  
+      "fuel","petrol","diesel","electric charge","charging point","fuel station","fuel pump","fuel price","fuel tank","refill",
+  
+      "left turn","right turn","u turn","straight road","one way","two way","no entry","speed limit","slow down","go ahead",
+  
+      "traffic police","road safety","helmet","seat belt","driving license","vehicle number","number plate","insurance","pollution check","registration",
+  
+      "bus lane","cycle lane","fast lane","slow lane","overtake lane","emergency lane","service road","main road","side road","inner road",
+  
+      "walk","run","ride fast","ride slow","drive safe","drive fast","drive slow","travel safe","travel fast","travel slow",
+  
+      "early morning travel","night travel","day travel","weekend travel","holiday travel","festival travel","daily commute","office commute","school commute","long journey",
+  
+      "airport taxi","city taxi","local taxi","online cab","ride share","car pool","bike taxi","auto ride","rickshaw ride","shared ride",
+  
+      "bus stop shelter","train platform seat","metro gate","airport lounge","waiting room","rest area","refreshment stall","food stall","water stall","ticket booth",
+  
+      "load","unload","carry","deliver","transport goods","goods vehicle","cargo truck","delivery bike","parcel service","logistics",
+  
+      "ship port","harbour","dock","jetty","boat stand","ferry point","water route","sea route","river route","port area",
+  
+      "air route","flight path","sky route","landing area","parking bay","hangar","air traffic","flight delay","flight cancel","flight schedule",
+  
+      "travel bag","luggage bag","carry bag","hand luggage","check in luggage","trolley","luggage belt","baggage claim","lost luggage","extra baggage",
+  
+      "window view","aisle walk","seat belt sign","no smoking sign","emergency exit","safety instruction","announcement","travel update","delay notice","arrival time"
+    ]
+  }

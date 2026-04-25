@@ -1,0 +1,68 @@
+{
+    "animals": [
+      "dog","cat","cow","buffalo","goat","sheep","horse","lion","tiger","elephant",
+      "monkey","deer","camel","donkey","pig","rabbit","rat","mouse","fox","wolf",
+      "bear","zebra","giraffe","kangaroo","panda","koala","leopard","cheetah","hyena","jackal",
+      "squirrel","chipmunk","hamster","guinea pig","otter","beaver","raccoon","skunk","mole","hedgehog",
+  
+      "hen","chicken","duck","goose","turkey","crow","sparrow","pigeon","parrot","peacock",
+      "eagle","hawk","owl","vulture","kingfisher","woodpecker","flamingo","penguin","swan","kite bird",
+      "dove","bulbul","myna","cuckoo","nightingale","robin","bluebird","seagull","heron","crane",
+  
+      "fish","shark","whale","dolphin","octopus","squid","crab","lobster","shrimp","prawn",
+      "starfish","jellyfish","eel","seahorse","stingray","salmon","tuna","goldfish","catfish","carp",
+  
+      "snake","lizard","crocodile","alligator","turtle","tortoise","frog","toad","chameleon","gecko",
+  
+      "ant","bee","butterfly","mosquito","fly","housefly","dragonfly","beetle","ladybug","grasshopper",
+      "cockroach","termite","wasp","moth","spider","scorpion","centipede","millipede","tick","flea",
+  
+      "pet dog","pet cat","farm cow","farm goat","wild lion","wild tiger","wild elephant","wild deer","wild fox","wild wolf",
+      "baby dog","baby cat","baby cow","baby goat","baby sheep","baby horse","baby lion","baby tiger","baby elephant","baby monkey",
+  
+      "male dog","female dog","male cat","female cat","male lion","female lion","male tiger","female tiger","male horse","female horse",
+      "young dog","young cat","young cow","young goat","young sheep","young horse","young lion","young tiger","young elephant","young monkey",
+  
+      "big dog","small dog","big cat","small cat","big animal","small animal","fast animal","slow animal","wild animal","domestic animal",
+  
+      "farm animal","pet animal","zoo animal","forest animal","water animal","land animal","air animal","night animal","day animal","jungle animal",
+  
+      "animal group","animal herd","animal pack","animal family","animal food","animal habitat","animal life","animal care","animal sound","animal track",
+  
+      "barking dog","running horse","jumping monkey","flying bird","swimming fish","roaring lion","walking elephant","sleeping cat","eating cow","grazing goat",
+  
+      "wild dog","wild cat","wild bear","wild wolf","wild fox","wild zebra","wild giraffe","wild kangaroo","wild panda","wild koala",
+  
+      "farm hen","farm duck","farm goat","farm sheep","farm horse","farm pig","farm cow","farm turkey","farm rabbit","farm animal",
+  
+      "pet bird","pet fish","pet rabbit","pet hamster","pet parrot","pet pigeon","pet dog","pet cat","pet turtle","pet animal",
+  
+      "jungle lion","jungle tiger","jungle elephant","jungle monkey","jungle snake","jungle deer","jungle fox","jungle wolf","jungle bear","jungle animal",
+  
+      "sea fish","sea shark","sea whale","sea dolphin","sea crab","sea octopus","sea jellyfish","sea turtle","sea animal","deep sea fish",
+  
+      "river fish","river turtle","river crocodile","river dolphin","river animal","lake fish","pond fish","fresh water fish","salt water fish","water animal",
+  
+      "tree monkey","tree bird","tree squirrel","tree animal","flying bird","climbing monkey","jumping squirrel","sitting bird","resting animal","sleeping animal",
+  
+      "fast dog","fast horse","fast tiger","fast cheetah","slow turtle","slow snail","strong elephant","strong horse","weak animal","active animal",
+  
+      "cute dog","cute cat","cute rabbit","cute panda","cute koala","cute animal","friendly dog","friendly cat","angry dog","angry cat",
+  
+      "black dog","white dog","brown dog","black cat","white cat","brown cat","grey elephant","striped tiger","spotted leopard","colorful bird",
+  
+      "animal body","animal tail","animal leg","animal head","animal eye","animal ear","animal nose","animal skin","animal fur","animal horn",
+  
+      "animal teeth","animal claw","animal wing","animal fin","animal shell","animal bone","animal blood","animal heart","animal brain","animal body part",
+  
+      "animal sound bark","animal sound meow","animal sound roar","animal sound moo","animal sound neigh","animal sound quack","animal sound chirp","animal sound hiss","animal sound buzz","animal sound croak",
+  
+      "animal food grass","animal food meat","animal food fish","animal food grain","animal food leaf","animal food fruit","animal food insect","animal food seed","animal food plant","animal food water",
+  
+      "animal home nest","animal home den","animal home cave","animal home hole","animal home tree","animal home water","animal home farm","animal home zoo","animal home forest","animal home jungle",
+  
+      "animal life cycle","animal growth","animal birth","animal baby","animal adult","animal old","animal death","animal survival","animal behavior","animal movement",
+  
+      "animal run","animal jump","animal walk","animal fly","animal swim","animal crawl","animal climb","animal hunt","animal eat","animal drink"
+    ]
+  }

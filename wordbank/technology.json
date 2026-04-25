@@ -1,0 +1,57 @@
+{
+    "technology": [
+      "computer","laptop","desktop","mobile","phone","tablet","smartphone","device","screen","display",
+      "keyboard","mouse","touchpad","monitor","printer","scanner","speaker","headphones","earphones","microphone",
+  
+      "internet","wifi","bluetooth","network","signal","data","mobile data","hotspot","connection","speed",
+      "download","upload","stream","browse","search","click","scroll","tap","type","save",
+  
+      "app","application","software","program","system","platform","tool","feature","option","setting",
+      "menu","icon","button","link","page","website","webpage","homepage","dashboard","profile",
+  
+      "login","logout","signup","password","username","email","otp","verification","security","privacy",
+      "account","user","admin","access","permission","lock","unlock","backup","restore","reset",
+  
+      "file","folder","document","image","photo","video","audio","music","record","screenshot",
+      "edit","delete","copy","paste","cut","rename","share","send","receive","download file",
+  
+      "camera","selfie","video call","call","voice call","message","chat","text","notification","alert",
+      "ringtone","vibration","silent mode","airplane mode","dark mode","light mode","brightness","volume","mute","unmute",
+  
+      "charger","battery","power","charge","full charge","low battery","plug","socket","cable","wire",
+      "power bank","adapter","usb","port","input","output","switch on","switch off","restart","shutdown",
+  
+      "update","upgrade","install","uninstall","open app","close app","run","load","refresh","sync",
+      "connect","disconnect","pair","scan","search device","add device","remove device","enable","disable","activate",
+  
+      "cloud","storage","drive","online storage","offline","server","database","data storage","backup data","data transfer",
+      "file share","file upload","file download","file size","file format","zip file","unzip","compress","extract","save file",
+  
+      "browser","search engine","google search","web search","history","bookmark","tab","new tab","close tab","incognito mode",
+      "address bar","url","link click","page load","page refresh","page error","page not found","server error","timeout","loading",
+  
+      "social media","post","like","comment","share post","follow","unfollow","friend request","accept request","block user",
+      "unblock user","message send","message receive","group chat","status","story","live video","streaming","video upload","photo upload",
+  
+      "ai","robot","automation","smart device","smart home","voice assistant","command","voice command","face unlock","fingerprint",
+      "biometric","security lock","pattern lock","pin code","qr code","scan code","barcode","digital payment","upi","wallet",
+  
+      "online payment","net banking","mobile banking","payment app","transaction","balance","transfer money","receive money","bill payment","recharge",
+      "ticket booking","online shopping","add to cart","checkout","order","track order","delivery","cancel order","refund","review",
+  
+      "game","video game","mobile game","online game","offline game","multiplayer","single player","score","level","achievement",
+      "game control","game settings","start game","pause game","end game","restart game","game over","win game","lose game","play again",
+  
+      "email send","email receive","inbox","outbox","draft","spam","delete mail","forward mail","reply mail","attachment",
+      "download attachment","upload attachment","email address","subject","compose mail","send mail","check mail","mail alert","mail box","mail storage",
+  
+      "calendar","reminder","alarm","timer","clock app","notes","notepad","calculator","weather app","map",
+      "gps","location","track location","share location","find place","navigation","route","direction","distance","time",
+  
+      "settings menu","system update","device info","storage info","battery status","network status","app settings","privacy settings","security settings","display settings",
+      "sound settings","language settings","date time","reset settings","factory reset","data usage","mobile usage","wifi settings","bluetooth settings","hotspot settings",
+  
+      "screen lock","unlock phone","lock screen","home screen","app screen","notification bar","status bar","control panel","quick settings","swipe",
+      "tap screen","double tap","long press","drag","drop","zoom in","zoom out","scroll up","scroll down","screen rotate"
+    ]
+  }

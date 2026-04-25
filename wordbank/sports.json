@@ -1,0 +1,61 @@
+{
+    "sports": [
+      "cricket","football","tennis","badminton","hockey","kabaddi","basketball","volleyball","baseball","rugby",
+      "golf","boxing","wrestling","swimming","cycling","running","jogging","skipping","jumping","archery",
+      "shooting","karate","judo","taekwondo","gymnastics","skating","skiing","surfing","rowing","canoeing",
+      "kayaking","handball","polo","snooker","billiards","chess","carrom","ludo","marathon","relay",
+      "sprint","high jump","long jump","pole vault","discus","javelin","shot put","weightlifting","powerlifting","triathlon",
+  
+      "bat","ball","racket","net","goal","post","helmet","gloves","pads","shoes",
+      "jersey","whistle","scoreboard","trophy","medal","cup","kit","uniform","field","pitch",
+      "court","stadium","ground","track","lane","ring","arena","pool","table","board",
+  
+      "player","team","coach","captain","referee","umpire","judge","trainer","manager","fan",
+      "supporter","spectator","athlete","runner","swimmer","batsman","bowler","fielder","goalkeeper","defender",
+      "striker","allrounder","substitute","winner","loser","champion","opponent","partner","leader","member",
+  
+      "match","game","tournament","league","series","final","semifinal","quarterfinal","practice","training",
+      "warmup","cooldown","competition","event","round","session","inning","over","set","half",
+  
+      "run","jump","throw","catch","hit","kick","pass","shoot","dribble","serve",
+      "smash","block","tackle","defend","attack","score","win","lose","draw","tie",
+      "start","stop","play","pause","continue","finish","celebrate","train","practice","exercise",
+  
+      "speed","strength","power","energy","fitness","balance","focus","skill","timing","accuracy",
+      "stamina","endurance","agility","flexibility","control","strategy","plan","effort","teamwork","spirit",
+  
+      "six","four","goal","point","score","target","record","rank","position","level",
+      "top","bottom","first","second","third","bonus","penalty","free hit","free kick","corner",
+  
+      "indoor","outdoor","team sport","individual sport","contact sport","water sport","field sport","track event","gym event","practice game",
+  
+      "practice match","friendly match","league match","knockout","group stage","final match","opening","closing","ceremony","award",
+  
+      "left hand","right hand","fast run","slow run","high score","low score","quick pass","long pass","short pass","hard hit",
+      "soft hit","big shot","small shot","full swing","half swing","top spin","back spin","side spin","long jump run","short jump",
+  
+      "team win","team loss","player score","match start","match end","game play","game over","time out","extra time","sudden death",
+  
+      "practice session","training session","fitness training","team meeting","game plan","match plan","win match","lose match","draw game","play fair",
+  
+      "sports day","school sports","college sports","national sport","international sport","club match","local match","big match","final game","opening match",
+  
+      "score run","hit ball","throw ball","catch ball","kick ball","pass ball","block shot","save goal","take shot","make run",
+  
+      "jump high","run fast","throw far","hit strong","kick hard","play smart","train hard","work hard","stay fit","stay strong",
+  
+      "team spirit","fair play","good game","nice shot","well played","great match","big win","close match","easy win","hard match",
+  
+      "start game","end game","pause game","restart game","watch match","join team","leave team","build team","lead team","support team",
+  
+      "practice daily","train daily","run daily","jump daily","play daily","improve skill","learn game","teach game","watch game","enjoy game",
+  
+      "bat swing","ball spin","ball speed","run speed","jump height","throw distance","shot power","kick power","pass speed","reaction time",
+  
+      "team score","player rank","match result","game result","final score","top score","best player","most runs","highest score","quick win",
+  
+      "lose point","gain point","extra run","wide ball","no ball","free throw","penalty shot","goal kick","corner kick","throw in",
+  
+      "sports club","sports kit","sports gear","sports wear","sports shoes","sports bag","sports event","sports match","sports team","sports player"
+    ]
+  }

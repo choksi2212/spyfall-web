@@ -1,0 +1,68 @@
+{
+    "places": [
+      "home","house","room","kitchen","bedroom","bathroom","hall","balcony","garden","yard",
+      "school","college","university","classroom","lab","library","office","meeting room","staff room","canteen",
+      "hospital","clinic","pharmacy","medical shop","operation room","ward","emergency room","lab room","waiting area","reception",
+      "market","shop","mall","store","supermarket","grocery store","vegetable market","fruit market","clothing shop","electronics shop",
+      "restaurant","hotel","cafe","dhaba","food court","bakery","tea stall","coffee shop","juice center","sweet shop",
+  
+      "city","town","village","colony","society","area","locality","street","road","lane",
+      "highway","bridge","flyover","signal","crossroad","junction","bus stop","bus stand","railway station","platform",
+      "airport","metro station","taxi stand","parking","garage","petrol pump","charging station","toll booth","checkpost","gate",
+  
+      "park","garden","playground","stadium","sports ground","gym","fitness center","swimming pool","club","community hall",
+      "temple","church","mosque","gurudwara","ashram","holy place","prayer hall","shrine","monastery","pilgrimage place",
+  
+      "bank","ATM","post office","police station","court","government office","municipal office","passport office","ration shop","service center",
+      "factory","warehouse","construction site","workshop","farm","field","barn","dairy","poultry farm","fish farm",
+  
+      "beach","river","lake","pond","dam","waterfall","mountain","hill","forest","jungle",
+      "desert","valley","island","cave","cliff","plateau","grassland","nature park","wildlife sanctuary","zoo",
+  
+      "cinema","theatre","multiplex","museum","art gallery","exhibition hall","auditorium","stage","event hall","conference hall",
+  
+      "hotel room","guest room","waiting room","study room","computer lab","science lab","music room","dance room","prayer room","meeting hall",
+  
+      "city park","city road","city mall","city hospital","city school","city office","city market","city area","city center","city street",
+      "village house","village school","village road","village temple","village market","village area","village pond","village farm","village field","village street",
+  
+      "school gate","school ground","school office","school library","school lab","school canteen","school bus stop","school corridor","school stage","school classroom",
+      "college campus","college lab","college library","college canteen","college ground","college office","college hostel","college gate","college corridor","college hall",
+  
+      "office cabin","office desk area","office lobby","office floor","office meeting room","office pantry","office entrance","office building","office corridor","office washroom",
+  
+      "hospital room","hospital bed area","hospital ward","hospital lobby","hospital entrance","hospital pharmacy","hospital lab","hospital office","hospital corridor","hospital lift",
+  
+      "market area","market road","market shop","market lane","market building","market entrance","market street","market corner","market center","market zone",
+  
+      "mall entrance","mall floor","mall shop","mall parking","mall food court","mall cinema","mall lift","mall escalator","mall corridor","mall area",
+  
+      "restaurant table","restaurant kitchen","restaurant counter","restaurant hall","restaurant entrance","restaurant waiting area","restaurant corner","restaurant seat","restaurant floor","restaurant space",
+  
+      "bus stop shelter","bus stand platform","bus station area","bus station entry","bus station exit","bus station lane","bus station road","bus station waiting area","bus station ticket counter","bus station parking",
+  
+      "railway track","railway platform","railway bridge","railway crossing","railway station hall","railway waiting room","railway ticket counter","railway entrance","railway exit","railway office",
+  
+      "airport terminal","airport gate","airport runway","airport lounge","airport waiting area","airport security","airport check in","airport baggage area","airport counter","airport entrance",
+  
+      "park bench area","park walking track","park gate","park playground","park garden area","park lake area","park corner","park entry","park exit","park path",
+  
+      "farm house","farm field","farm road","farm area","farm land","farm barn","farm storage","farm water tank","farm gate","farm yard",
+  
+      "forest path","forest area","forest road","forest camp","forest entry","forest exit","forest hut","forest watch tower","forest trail","forest zone",
+  
+      "beach sand area","beach water area","beach road","beach resort","beach entry","beach exit","beach hut","beach shop","beach corner","beach walkway",
+  
+      "river bank","river side","river bridge","river water area","river path","river edge","river crossing","river zone","river shore","river point",
+  
+      "mountain top","mountain base","mountain path","mountain road","mountain trail","mountain area","mountain peak","mountain camp","mountain view point","mountain zone",
+  
+      "hotel lobby","hotel reception","hotel corridor","hotel lift","hotel entrance","hotel exit","hotel parking","hotel restaurant","hotel room area","hotel floor",
+  
+      "cinema hall","cinema screen area","cinema ticket counter","cinema lobby","cinema entrance","cinema exit","cinema seat area","cinema snack area","cinema waiting area","cinema corridor",
+  
+      "temple gate","temple hall","temple area","temple courtyard","temple entrance","temple exit","temple steps","temple path","temple room","temple space",
+  
+      "bank counter","bank office","bank lobby","bank entrance","bank exit","bank waiting area","bank hall","bank room","bank building","bank floor"
+    ]
+  }
