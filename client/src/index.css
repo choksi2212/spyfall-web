@@ -28,12 +28,10 @@ html {
 
 body {
   background: radial-gradient(ellipse 120% 80% at 50% -20%, #1a0a14 0%, var(--vd-void) 45%, #020203 100%);
-  overflow: hidden; /* prevent page scroll; panels manage their own overflow */
 }
 
 #root {
-  height: 100dvh; /* stable viewport height on mobile */
-  overflow: hidden;
+  min-height: 100dvh;
 }
 
 /* Lightweight vignette — single pseudo-element, no blur stack */

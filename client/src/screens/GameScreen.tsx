@@ -76,6 +76,7 @@ export function GameScreen({ api, state, onLeave }: Props) {
     const isYourTurn = !spec && turnId === you.id;
     const deadline = state.clueTurnEndsAt;
     const clueLeft = deadline ? Math.max(0, deadline - now) : 0;
+    const reviewOnly = !turnId && deadline != null && clueLeft > 0;
 
     return (
       <div className="space-y-4">
@@ -96,9 +97,15 @@ export function GameScreen({ api, state, onLeave }: Props) {
             <div className="vd-panel rounded-2xl p-4">
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <p className="font-display text-xs uppercase tracking-widest text-mystic-gold/80">Turn</p>
+                  <p className="font-display text-xs uppercase tracking-widest text-mystic-gold/80">
+                    {reviewOnly ? "Review" : "Turn"}
+                  </p>
                   <p className="font-display text-lg text-mystic-pale">
-                    {turnId ? nameById.get(turnId) : "…"}
+                    {reviewOnly
+                      ? "Read the gallery"
+                      : turnId
+                        ? nameById.get(turnId)
+                        : "…"}
                   </p>
                 </div>
                 <p className="font-display text-base text-mystic-crimson">{(clueLeft / 1000).toFixed(1)}s</p>
@@ -122,7 +129,13 @@ export function GameScreen({ api, state, onLeave }: Props) {
                 })}
               </div>
 
-              {!isYourTurn && !spec && (
+              {reviewOnly && (
+                <p className="mt-4 text-center font-body text-sm text-mystic-mist">
+                  Discussion begins in{" "}
+                  <span className="text-mystic-gold">{(clueLeft / 1000).toFixed(1)}s</span>
+                </p>
+              )}
+              {!reviewOnly && !isYourTurn && !spec && (
                 <p className="mt-4 text-center font-body text-sm text-mystic-mist">
                   The moon turns to{" "}
                   <span className="text-mystic-gold">{turnId ? nameById.get(turnId) : "…"}</span>
@@ -196,8 +209,8 @@ export function GameScreen({ api, state, onLeave }: Props) {
     const canChat = !spec;
 
     return (
-      <div className="flex h-full min-h-0 flex-col overflow-hidden">
-        <div className="vd-panel flex min-h-0 flex-1 flex-col overflow-hidden rounded-2xl">
+      <div className="flex min-h-[min(70vh,680px)] flex-col">
+        <div className="vd-panel flex min-h-0 flex-1 flex-col rounded-2xl">
           <div className="flex items-center justify-between gap-3 border-b border-mystic-gold/15 px-4 py-3">
             <div>
               <p className="font-display text-xs uppercase tracking-widest text-mystic-gold">Council</p>

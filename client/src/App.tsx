@@ -116,7 +116,7 @@ export default function App() {
   );
 
   return (
-    <div className="relative flex h-[100dvh] flex-col overflow-hidden">
+    <div className="relative flex min-h-dvh flex-col">
       <div className="vd-fog" aria-hidden />
       <div className="vd-vignette" aria-hidden />
       <header className="relative z-50 shrink-0 px-4 pt-4 text-center">
@@ -127,12 +127,8 @@ export default function App() {
         )}
       </header>
       <main
-        className={`relative z-10 mx-auto w-full flex-1 min-h-0 px-4 pb-4 pt-4 ${
-          state?.phase === "lobby"
-            ? "max-w-6xl overflow-hidden"
-            : state
-              ? "max-w-4xl"
-              : "max-w-lg"
+        className={`relative z-10 mx-auto w-full flex-1 px-4 pb-8 pt-4 ${
+          state?.phase === "lobby" ? "max-w-6xl" : state ? "max-w-4xl" : "max-w-lg"
         }`}
       >
         <AnimatePresence mode="wait">
@@ -142,7 +138,6 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
-            className="h-full min-h-0"
           >
             {view}
           </motion.div>

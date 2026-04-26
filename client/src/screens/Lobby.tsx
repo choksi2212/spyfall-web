@@ -24,11 +24,8 @@ export function Lobby({ api, state, onLeave }: Props) {
   const [chat, setChat] = useState("");
   const isHost = state.you.id === state.hostId;
   const s = state.settings!;
-  const chatEndRef = useRef<HTMLDivElement>(null);
-  const visiblePlayers = state.players.slice(0, 6);
-  const extraPlayers = Math.max(0, state.players.length - visiblePlayers.length);
-  const visibleChat = state.lobbyChat.slice(Math.max(0, state.lobbyChat.length - 8));
-  const extraChat = Math.max(0, state.lobbyChat.length - visibleChat.length);
+  const chatScrollRef = useRef<HTMLDivElement>(null);
+  const lastLobbyMsgId = state.lobbyChat.at(-1)?.id ?? "";
 
   const settings = useMemo(
     () => ({
@@ -44,12 +41,18 @@ export function Lobby({ api, state, onLeave }: Props) {
     api.updateSettings({ ...settings, ...patch });
   };
 
+  // Jump to latest whenever anyone sends (including while you were reading older messages).
   useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [state.lobbyChat.length]);
+    if (!lastLobbyMsgId) return;
+    const el = chatScrollRef.current;
+    if (!el) return;
+    requestAnimationFrame(() => {
+      el.scrollTop = el.scrollHeight;
+    });
+  }, [lastLobbyMsgId]);
 
   return (
-    <div className="flex h-full min-h-0 flex-col gap-3 overflow-hidden lg:flex-row lg:items-stretch lg:gap-4">
+    <div className="flex flex-col gap-4 lg:flex-row lg:items-stretch lg:gap-6">
       {/* Left: room + host settings + players + start */}
       <aside className="flex w-full min-w-0 flex-col gap-2 lg:w-[min(100%,360px)] lg:shrink-0 xl:w-[380px]">
         <div className="vd-panel rounded-2xl p-3">
@@ -131,10 +134,10 @@ export function Lobby({ api, state, onLeave }: Props) {
           </div>
         )}
 
-        <div className="vd-panel rounded-2xl p-3">
-          <p className="font-display text-xs uppercase tracking-widest text-mystic-gold">Coven</p>
-          <ul className="mt-2 space-y-1 font-body text-mystic-pale">
-            {visiblePlayers.map((p) => (
+        <div className="vd-panel flex max-h-[min(44vh,340px)] flex-col rounded-2xl p-3 sm:max-h-[min(50vh,420px)] lg:max-h-[min(70vh,520px)]">
+          <p className="shrink-0 font-display text-xs uppercase tracking-widest text-mystic-gold">Coven</p>
+          <ul className="mt-2 min-h-0 flex-1 space-y-1 overflow-y-auto overscroll-contain font-body text-mystic-pale">
+            {state.players.map((p) => (
               <li key={p.id} className="flex justify-between text-sm">
                 <span>
                   {p.name}
@@ -148,9 +151,6 @@ export function Lobby({ api, state, onLeave }: Props) {
               </li>
             ))}
           </ul>
-          {extraPlayers > 0 && (
-            <p className="mt-1 text-center text-[11px] text-mystic-mist/80">+{extraPlayers} more</p>
-          )}
           {isHost && (
             <button
               type="button"
@@ -167,19 +167,22 @@ export function Lobby({ api, state, onLeave }: Props) {
         </div>
       </aside>
 
-      {/* Right: lobby chat */}
-      <section className="flex min-w-0 flex-1 flex-col min-h-0">
-        <div className="vd-panel flex min-h-0 flex-1 flex-col overflow-hidden rounded-2xl">
-          <div className="border-b border-mystic-gold/15 px-4 py-3">
+      {/* Right: lobby chat — tall panel; messages scroll inside */}
+      <section className="flex min-h-[min(58vh,520px)] min-w-0 flex-1 flex-col lg:min-h-[calc(100dvh-10.5rem)]">
+        <div className="vd-panel flex min-h-0 flex-1 flex-col rounded-2xl">
+          <div className="shrink-0 border-b border-mystic-gold/15 px-4 py-3">
             <p className="font-display text-xs uppercase tracking-widest text-mystic-gold">Whispers</p>
             <p className="vd-subtitle mt-0.5 text-xs text-mystic-mist/90">Lobby — speak softly</p>
           </div>
 
-          <div className="min-h-0 flex-1 space-y-2 overflow-hidden px-4 py-3 font-body text-sm text-mystic-pale/95">
-            {visibleChat.length === 0 ? (
+          <div
+            ref={chatScrollRef}
+            className="min-h-0 flex-1 space-y-2 overflow-y-auto overscroll-contain px-4 py-3 font-body text-sm text-mystic-pale/95"
+          >
+            {state.lobbyChat.length === 0 ? (
               <p className="text-center text-mystic-mist/70">No messages yet. Break the silence…</p>
             ) : (
-              visibleChat.map((m) => (
+              state.lobbyChat.map((m) => (
                 <p key={m.id} className="break-words leading-relaxed">
                   <span className="font-display text-[11px] uppercase tracking-wide text-mystic-gold/95">
                     {m.fromName}
@@ -189,14 +192,10 @@ export function Lobby({ api, state, onLeave }: Props) {
                 </p>
               ))
             )}
-            {extraChat > 0 && (
-              <p className="text-center text-[11px] text-mystic-mist/80">+{extraChat} older messages</p>
-            )}
-            <div ref={chatEndRef} />
           </div>
 
           <form
-            className="border-t border-mystic-gold/15 p-3"
+            className="shrink-0 border-t border-mystic-gold/15 p-3"
             onSubmit={(e) => {
               e.preventDefault();
               const t = chat.trim();

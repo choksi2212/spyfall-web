@@ -1,3 +1,4 @@
+import { randomInt } from "node:crypto";
 import { nanoid } from "nanoid";
 import type { Server } from "socket.io";
 import type {
@@ -15,6 +16,8 @@ import type { WordService } from "./wordService.js";
 const CLUE_MAX = 80;
 const REVEAL_MS = 3000;
 const CLUE_TURN_MS = 20_000;
+/** Pause after the last clue so everyone can read the gallery before discussion. */
+const CLUE_REVIEW_MS = 5000;
 const VOTE_MS = 15_000;
 const END_TO_LOBBY_MS = 7000;
 const LOBBY_CHAT_MAX = 500;
@@ -25,7 +28,7 @@ const DISCONNECT_REMOVE_MS = 20_000;
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = randomInt(0, i + 1);
     [a[i], a[j]] = [a[j]!, a[i]!];
   }
   return a;
@@ -283,7 +286,12 @@ export class Room {
     this.clueTurnEndsAt = null;
     this.currentClueIndex++;
     if (this.currentClueIndex >= this.clueOrder.length) {
-      this.startDiscussion();
+      this.clueTurnEndsAt = Date.now() + CLUE_REVIEW_MS;
+      this.schedule(() => {
+        if (this.phase !== "clues") return;
+        this.startDiscussion();
+      }, CLUE_REVIEW_MS);
+      this.broadcastPublic();
     } else {
       this.beginCurrentClueTurn();
     }
