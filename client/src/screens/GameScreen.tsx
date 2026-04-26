@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import type { ClientApi } from "../lib/socket";
 import type { ClientGameState } from "../types";
@@ -35,6 +35,18 @@ export function GameScreen({ api, state, onLeave }: Props) {
     for (const p of state.players) m.set(p.id, p.name);
     return m;
   }, [state.players]);
+
+  const discussionScrollRef = useRef<HTMLDivElement>(null);
+  const lastDiscussionMsgId = state.chat.at(-1)?.id ?? "";
+  useEffect(() => {
+    if (state.phase !== "discussion") return;
+    if (!lastDiscussionMsgId) return;
+    const el = discussionScrollRef.current;
+    if (!el) return;
+    requestAnimationFrame(() => {
+      el.scrollTop = el.scrollHeight;
+    });
+  }, [state.phase, lastDiscussionMsgId]);
 
   if (state.phase === "reveal") {
     const msLeft = state.you.revealEndsAt ? Math.max(0, state.you.revealEndsAt - now) : 0;
@@ -209,9 +221,9 @@ export function GameScreen({ api, state, onLeave }: Props) {
     const canChat = !spec;
 
     return (
-      <div className="flex min-h-[min(70vh,680px)] flex-col">
-        <div className="vd-panel flex min-h-0 flex-1 flex-col rounded-2xl">
-          <div className="flex items-center justify-between gap-3 border-b border-mystic-gold/15 px-4 py-3">
+      <div className="flex h-[min(58vh,calc(100dvh-14rem))] min-h-[280px] w-full min-w-0 flex-col sm:h-[min(62vh,calc(100dvh-13rem))] lg:h-[calc(100dvh-9.5rem)] lg:max-h-[calc(100dvh-9.5rem)]">
+        <div className="vd-panel flex h-full min-h-0 flex-col overflow-hidden rounded-2xl">
+          <div className="flex shrink-0 items-center justify-between gap-3 border-b border-mystic-gold/15 px-4 py-3">
             <div>
               <p className="font-display text-xs uppercase tracking-widest text-mystic-gold">Council</p>
               <p className="vd-subtitle mt-0.5 text-xs text-mystic-mist/90">Discussion — speak, accuse, defend</p>
@@ -228,7 +240,10 @@ export function GameScreen({ api, state, onLeave }: Props) {
             </div>
           </div>
 
-          <div className="min-h-0 flex-1 space-y-2 overflow-y-auto px-4 py-3 font-body text-base text-mystic-pale/95">
+          <div
+            ref={discussionScrollRef}
+            className="vd-chat-scroll space-y-2 px-4 py-3 font-body text-base text-mystic-pale/95"
+          >
             {state.chat.length === 0 ? (
               <p className="text-center text-mystic-mist/70">No messages yet. Start the council…</p>
             ) : (
@@ -246,7 +261,7 @@ export function GameScreen({ api, state, onLeave }: Props) {
 
           {canChat ? (
             <form
-              className="border-t border-mystic-gold/15 p-3"
+              className="shrink-0 border-t border-mystic-gold/15 p-3"
               onSubmit={(e) => {
                 e.preventDefault();
                 const t = msg.trim();
@@ -273,7 +288,7 @@ export function GameScreen({ api, state, onLeave }: Props) {
               </div>
             </form>
           ) : (
-            <div className="border-t border-mystic-gold/15 px-4 py-3 text-center text-sm text-mystic-mist">
+            <div className="shrink-0 border-t border-mystic-gold/15 px-4 py-3 text-center text-sm text-mystic-mist">
               Spectating. No voice.
             </div>
           )}
