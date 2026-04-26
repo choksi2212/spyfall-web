@@ -36,6 +36,8 @@ body {
 
 /* Scrollable chat canvas: keeps messages inside the panel above the input */
 .vd-chat-scroll {
+  min-height: 0;
+  flex: 1 1 0%;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;

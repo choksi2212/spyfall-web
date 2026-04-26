@@ -52,9 +52,9 @@ export function Lobby({ api, state, onLeave }: Props) {
   }, [lastLobbyMsgId]);
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col gap-4 lg:h-[calc(100dvh-9.5rem)] lg:min-h-0 lg:max-h-[calc(100dvh-9.5rem)] lg:flex-row lg:items-stretch lg:gap-6">
-      {/* Left: room + host settings + players + start */}
-      <aside className="flex w-full min-w-0 shrink-0 flex-col gap-2 overflow-y-auto lg:w-[min(100%,360px)] lg:max-h-full lg:overflow-y-auto xl:w-[380px]">
+    <div className="flex min-h-0 flex-1 flex-col gap-4 lg:flex-row lg:items-start lg:gap-6">
+      {/* Left: room + host settings + coven — no column scroll; natural height */}
+      <aside className="flex w-full min-w-0 flex-col gap-2 lg:w-[min(100%,360px)] lg:shrink-0 xl:w-[380px]">
         <div className="vd-panel rounded-2xl p-3">
           <div className="flex items-center justify-between gap-2">
             <div>
@@ -134,9 +134,9 @@ export function Lobby({ api, state, onLeave }: Props) {
           </div>
         )}
 
-        <div className="vd-panel flex max-h-[min(44vh,340px)] flex-col rounded-2xl p-3 sm:max-h-[min(50vh,420px)] lg:max-h-[min(70vh,520px)]">
-          <p className="shrink-0 font-display text-xs uppercase tracking-widest text-mystic-gold">Coven</p>
-          <ul className="mt-2 min-h-0 flex-1 space-y-1 overflow-y-auto overscroll-contain font-body text-mystic-pale">
+        <div className="vd-panel rounded-2xl p-3">
+          <p className="font-display text-xs uppercase tracking-widest text-mystic-gold">Coven</p>
+          <ul className="mt-2 space-y-1 font-body text-mystic-pale">
             {state.players.map((p) => (
               <li key={p.id} className="flex justify-between text-sm">
                 <span>
@@ -167,8 +167,8 @@ export function Lobby({ api, state, onLeave }: Props) {
         </div>
       </aside>
 
-      {/* Right: fixed-height column on desktop so the message list scrolls instead of growing forever */}
-      <section className="flex min-h-0 min-w-0 flex-1 flex-col max-h-[min(70vh,calc(100dvh-12rem))] sm:max-h-[min(75vh,calc(100dvh-11rem))] lg:h-full lg:max-h-full">
+      {/* Right: explicit height so only this column scrolls inside the message area */}
+      <section className="flex h-[min(58vh,calc(100dvh-14rem))] min-h-[280px] w-full min-w-0 flex-1 flex-col sm:h-[min(62vh,calc(100dvh-13rem))] lg:h-[calc(100dvh-9.5rem)] lg:max-h-[calc(100dvh-9.5rem)]">
         <div className="vd-panel flex h-full min-h-0 flex-col overflow-hidden rounded-2xl">
           <div className="shrink-0 border-b border-mystic-gold/15 px-4 py-3">
             <p className="font-display text-xs uppercase tracking-widest text-mystic-gold">Whispers</p>
@@ -177,7 +177,7 @@ export function Lobby({ api, state, onLeave }: Props) {
 
           <div
             ref={chatScrollRef}
-            className="vd-chat-scroll min-h-0 flex-1 space-y-2 px-4 py-3 font-body text-sm text-mystic-pale/95"
+            className="vd-chat-scroll space-y-2 px-4 py-3 font-body text-sm text-mystic-pale/95"
           >
             {state.lobbyChat.length === 0 ? (
               <p className="text-center text-mystic-mist/70">No messages yet. Break the silence…</p>
