@@ -128,7 +128,11 @@ export default function App() {
       </header>
       <main
         className={`relative z-10 mx-auto w-full flex-1 px-4 pb-8 pt-4 ${
-          state?.phase === "lobby" ? "max-w-6xl" : state ? "max-w-4xl" : "max-w-lg"
+          state?.phase === "lobby"
+            ? "max-w-6xl flex min-h-0 flex-col"
+            : state
+              ? "max-w-4xl"
+              : "max-w-lg"
         }`}
       >
         <AnimatePresence mode="wait">
@@ -138,6 +142,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -6 }}
             transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
+            className={state?.phase === "lobby" ? "flex min-h-0 flex-1 flex-col" : undefined}
           >
             {view}
           </motion.div>

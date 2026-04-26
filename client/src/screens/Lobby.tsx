@@ -52,9 +52,9 @@ export function Lobby({ api, state, onLeave }: Props) {
   }, [lastLobbyMsgId]);
 
   return (
-    <div className="flex flex-col gap-4 lg:flex-row lg:items-stretch lg:gap-6">
+    <div className="flex min-h-0 flex-1 flex-col gap-4 lg:h-[calc(100dvh-9.5rem)] lg:min-h-0 lg:max-h-[calc(100dvh-9.5rem)] lg:flex-row lg:items-stretch lg:gap-6">
       {/* Left: room + host settings + players + start */}
-      <aside className="flex w-full min-w-0 flex-col gap-2 lg:w-[min(100%,360px)] lg:shrink-0 xl:w-[380px]">
+      <aside className="flex w-full min-w-0 shrink-0 flex-col gap-2 overflow-y-auto lg:w-[min(100%,360px)] lg:max-h-full lg:overflow-y-auto xl:w-[380px]">
         <div className="vd-panel rounded-2xl p-3">
           <div className="flex items-center justify-between gap-2">
             <div>
@@ -167,9 +167,9 @@ export function Lobby({ api, state, onLeave }: Props) {
         </div>
       </aside>
 
-      {/* Right: lobby chat — tall panel; messages scroll inside */}
-      <section className="flex min-h-[min(58vh,520px)] min-w-0 flex-1 flex-col lg:min-h-[calc(100dvh-10.5rem)]">
-        <div className="vd-panel flex min-h-0 flex-1 flex-col rounded-2xl">
+      {/* Right: fixed-height column on desktop so the message list scrolls instead of growing forever */}
+      <section className="flex min-h-0 min-w-0 flex-1 flex-col max-h-[min(70vh,calc(100dvh-12rem))] sm:max-h-[min(75vh,calc(100dvh-11rem))] lg:h-full lg:max-h-full">
+        <div className="vd-panel flex h-full min-h-0 flex-col overflow-hidden rounded-2xl">
           <div className="shrink-0 border-b border-mystic-gold/15 px-4 py-3">
             <p className="font-display text-xs uppercase tracking-widest text-mystic-gold">Whispers</p>
             <p className="vd-subtitle mt-0.5 text-xs text-mystic-mist/90">Lobby — speak softly</p>
@@ -177,7 +177,7 @@ export function Lobby({ api, state, onLeave }: Props) {
 
           <div
             ref={chatScrollRef}
-            className="min-h-0 flex-1 space-y-2 overflow-y-auto overscroll-contain px-4 py-3 font-body text-sm text-mystic-pale/95"
+            className="vd-chat-scroll min-h-0 flex-1 space-y-2 px-4 py-3 font-body text-sm text-mystic-pale/95"
           >
             {state.lobbyChat.length === 0 ? (
               <p className="text-center text-mystic-mist/70">No messages yet. Break the silence…</p>

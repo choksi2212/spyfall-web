@@ -34,6 +34,35 @@ body {
   min-height: 100dvh;
 }
 
+/* Scrollable chat canvas: keeps messages inside the panel above the input */
+.vd-chat-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(201, 169, 98, 0.45) rgba(0, 0, 0, 0.3);
+}
+
+.vd-chat-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.vd-chat-scroll::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.vd-chat-scroll::-webkit-scrollbar-thumb {
+  background: rgba(201, 169, 98, 0.4);
+  border-radius: 4px;
+}
+
+.vd-chat-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 169, 98, 0.55);
+}
+
 /* Lightweight vignette — single pseudo-element, no blur stack */
 .vd-vignette {
   pointer-events: none;
